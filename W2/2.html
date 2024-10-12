@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Đăng kí</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form onsubmit="register(); return false;">
+      <table align="center" id="dangki">
+        <tr>
+          <td colspan="2" align="center"><h1>Đăng kí tài khoản</h1></td>
+        </tr>
+        <tr>
+          <td><p>Tài khoản</p></td>
+          <td>
+            <input
+              type="text"
+              name="txt_tk"
+              id="tk"
+              placeholder="Nhập tài khoản"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Mật khẩu</p></td>
+          <td>
+            <input
+              type="password"
+              name="txt_mk"
+              id="mk"
+              placeholder="Nhập mật khẩu"
+            />
+            <input type="checkbox" onclick="showmk()" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Xác nhận mật khẩu</p></td>
+          <td>
+            <input
+              type="password"
+              name="txt_xn_mk"
+              id="txt_xn_mk"
+              placeholder="Nhập lại mật khẩu"
+            />
+            <input type="checkbox" onclick="showmk_xn()" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Số điện thoại</p></td>
+          <td>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              oninput="validateInput(event)"
+              maxlength="10"
+              placeholder="Nhập số điện thoại"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Ngày sinh</p></td>
+          <td>
+            <input type="date" name="txt_ngaysinh" id="txt_ngaysinh" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Giới tính</p></td>
+          <td>
+            <select name="txt_gt" id="txt_gt">
+              <option value="Nam">Nam</option>
+              <option value="Nữ">Nữ</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Đăng kí" />
+            <input
+              type="reset"
+              value="Hủy"
+              onclick="setTimeout(function(){ window.location.href='index.html'; }, 100)"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
