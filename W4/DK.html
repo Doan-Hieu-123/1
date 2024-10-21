@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trang đăng kí</title>
+  </head>
+  <body>
+    <form>
+      <table align="center">
+        <tr>
+          <td colspan="2" align="center">
+            <h1>Đăng ký hệ thống</h1>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Tài khoản</td>
+          <td>
+            <input type="text" id="TK" placeholder="Tài khoản" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Mật khẩu</td>
+          <td>
+            <input type="password" id="MK" placeholder="Mật khẩu" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Nhắc lại mật khẩu</td>
+          <td>
+            <input
+              type="password"
+              id="NL_MK"
+              placeholder="Nhập lại mật khẩu"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Họ tên</td>
+          <td>
+            <input type="text" id="HT" placeholder="Nhập họ và tên" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Ngày sinh</td>
+          <td>
+            <input type="date" id="NS" required />
+          </td>
+        </tr>
+
+        <!-- kiểu select -->
+        <!-- <tr>
+          <td><p>Giới tính</p></td>
+          <td>
+            <select name="txt_gt" id="txt_gt">
+              <option value="Nam">Nam</option>
+              <option value="Nữ">Nữ</option>
+            </select>
+          </td>
+        </tr> -->
+
+        <tr>
+          <td><p>Giới tính</p></td>
+          <td>
+            <input type="radio" name="gioi_tinh" value="Nam" />Nam
+            <input type="radio" name="gioi_tinh" value="Nu" />Nữ
+            <input type="radio" name="gioi_tinh" value="Khac" />khác
+          </td>
+        </tr>
+
+        <tr>
+          <td>Địa chỉ</td>
+          <td>
+            <textarea name="DC" id="DC" required></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Quê quán</p></td>
+          <td>
+            <select name="txt_qq" id="QQ">
+              <option value="Ha_Noi">Ha Nội</option>
+              <option value="Ha_Nam">Ha Nam</option>
+              <option value="Hung_Yen">Hưng Yên</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Tuổi</td>
+          <td>
+            <input name="tuoi" type="number" id="T" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Sở thích</td>
+          <td>
+            <input name="so_thich" type="color" id="M_ST" />
+            <input name="so_thich" type="checkbox" id="ST" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Ảnh thẻ</td>
+          <td>
+            <input name="anh_the" type="file" id="AT" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Email</td>
+          <td>
+            <input name="email" type="email" id="EM" placeholder="Nhập email" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Số điện thoại</td>
+          <td>
+            <input
+              name="SDT"
+              type="tel"
+              id="SDT"
+              placeholder="Nhập số điện thoại"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Đăng kí" />
+            <input
+              type="reset"
+              value="Hủy"
+              onclick="setTimeout(function(){ window.location.href='index.html'; }, 100)"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -19,6 +19,7 @@
               name="txt_tk"
               id="tk"
               placeholder="Nhập tài khoản"
+              required
             />
           </td>
         </tr>
@@ -31,8 +32,9 @@
               name="txt_mk"
               id="mk"
               placeholder="Nhập mật khẩu"
+              required
             />
-            <input type="checkbox" onclick="showmk()" />
+            <input type="radio" onclick="showmk()" />
           </td>
         </tr>
 
@@ -44,8 +46,9 @@
               name="txt_xn_mk"
               id="txt_xn_mk"
               placeholder="Nhập lại mật khẩu"
+              required
             />
-            <input type="checkbox" onclick="showmk_xn()" />
+            <input type="radio" onclick="showmk_xn()" />
           </td>
         </tr>
 
@@ -59,6 +62,7 @@
               oninput="validateInput(event)"
               maxlength="10"
               placeholder="Nhập số điện thoại"
+              required
             />
           </td>
         </tr>
@@ -66,17 +70,37 @@
         <tr>
           <td><p>Ngày sinh</p></td>
           <td>
-            <input type="date" name="txt_ngaysinh" id="txt_ngaysinh" />
+            <input type="date" name="txt_ngaysinh" id="txt_ngaysinh" required />
           </td>
         </tr>
 
         <tr>
           <td><p>Giới tính</p></td>
           <td>
-            <select name="txt_gt" id="txt_gt">
-              <option value="Nam">Nam</option>
-              <option value="Nữ">Nữ</option>
-            </select>
+            <input type="radio" name="gioi_tinh" value="Nam" />Nam
+            <input type="radio" name="gioi_tinh" value="Nu" />Nữ
+            <input type="radio" name="gioi_tinh" value="Khac" />khác
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Tuổi</p></td>
+          <td>
+            <input name="tuoi" type="number" id="T" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Địa chỉ</p></td>
+          <td>
+            <textarea name="txt_diachi" id="txt_dc"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><p>Email</p></td>
+          <td>
+            <input name="email" type="email" id="EM" placeholder="Nhập email" />
           </td>
         </tr>
 
