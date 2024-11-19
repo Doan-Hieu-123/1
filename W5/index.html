@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ẩn Hiện Icon với Checkbox</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Định dạng cho các icon */
+      .icon {
+        font-size: 50px;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+      }
+
+      /* Ẩn icon thứ 2 khi checkbox được chọn */
+      #toggle-checkbox:checked + .icon1 {
+        display: none;
+      }
+
+      #toggle-checkbox:checked + .icon1 + .icon2 {
+        display: block;
+      }
+
+      /* Cấu hình các icon để chúng hiển thị đúng */
+      .icon1,
+      .icon2 {
+        display: block;
+      }
+
+      /* Ẩn icon thứ 2 mặc định */
+      .icon2 {
+        display: none;
+      }
+
+      /* Ẩn checkbox */
+      #toggle-checkbox {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Checkbox để đièu khien hiá»n thá» icon -->
+    <input type="checkbox" id="toggle-checkbox" />
+
+    <!-- Icon Ä‘áº§u tiÃªn -->
+    <label class="icon1" for="toggle-checkbox">
+      <i class="bx bx-user"></i>
+    </label>
+
+    <!-- Icon thá»« hai -->
+    <label class="icon2" for="toggle-checkbox">
+      <i class="bx bxl-facebook-square"></i>
+    </label>
+  </body>
+</html>

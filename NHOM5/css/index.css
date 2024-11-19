@@ -1,0 +1,298 @@
+.container {
+  padding: 0 10px 0 30px;
+}
+body {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center; /* Thêm thuộc tính này để căn chỉnh theo chiều dọc */
+}
+.list-icon {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+}
+.icon img {
+  width: 100px;
+  height: auto;
+  margin-right: 30px;
+}
+.item-discover {
+  width: 20%; /* Đảm bảo rằng item-discover có cùng chiều rộng với các phần tử khác */
+  height: 50px;
+  font-size: 20px;
+  padding: 0;
+  border: none;
+}
+.item-discover,
+.foryou,
+.sanpham,
+.lienhe {
+  width: 20%; /* Đảm bảo rằng các phần tử có chiều rộng bằng nhau */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: normal;
+  font-weight: 600;
+  color: black;
+}
+.item-discover:hover,
+.sanpham:hover,
+.lienhe:hover {
+  font-size: 21px;
+  color: rgb(111, 24, 24);
+  font-weight: 700;
+}
+.foryou:hover {
+  font-size: 20px;
+  color: rgb(111, 24, 24);
+  font-weight: 700;
+}
+.search-container {
+  position: relative; /* Đảm bảo icon có thể được căn chỉnh bên trong */
+  width: 50%; /* Hoặc chiều rộng của container tùy theo yêu cầu */
+}
+
+.search-bar {
+  width: 100%; /* Đảm bảo ô tìm kiếm chiếm hết chiều rộng của phần tử chứa */
+  height: 40px; /* Chiều cao của ô tìm kiếm */
+  padding-left: 40px; /* Khoảng cách bên trái để biểu tượng không bị che khuất */
+  border-radius: 12px;
+  border: 3px solid #45434380;
+  font-size: 15px;
+  box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  left: 10px; /* Khoảng cách từ bên trái của ô tìm kiếm */
+  top: 50%; /* Định vị biểu tượng ở giữa chiều cao */
+  transform: translateY(-50%); /* Căn giữa biểu tượng theo chiều dọc */
+  font-size: 20px; /* Đặt kích thước biểu tượng */
+  color: #888; /* Màu sắc biểu tượng */
+}
+.search-bar:focus {
+  background-color: rgb(244, 243, 235);
+  border: rgb(42, 137, 77) 3px solid;
+}
+.sign-up,
+.sign-in {
+  background-color: white;
+  color: black;
+  border: 1px solid #4f505094;
+  border-radius: 12px;
+  width: 15%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sign-in {
+  background-color: #fbe690;
+  margin-left: -15px;
+}
+.sign-in:hover,
+.sign-up:hover {
+  background-color: black;
+  color: white;
+}
+.fa-cart-shopping {
+  font-size: 30px;
+  padding-right: 50px;
+}
+.see-more {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(65, 48, 48);
+  padding-right: 13px;
+  padding-left: 13px;
+  margin-left: 68%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  bottom: 5px;
+}
+.see-more:hover {
+  background-color: rgb(104, 104, 174);
+  font-size: 17px;
+}
+.image-background {
+  width: 98%;
+  position: relative;
+  border-radius: 7%;
+}
+.box-overlapse {
+  width: 39%;
+  height: 28%;
+  background-color: #ffffff5c;
+  position: absolute;
+  border-radius: 21px;
+  align-items: center;
+  margin-top: -15%;
+  margin-left: 2%;
+}
+/* hhhhhhhhhhhhhhh
+phần 2
+h */
+.haikhoto {
+  display: flex;
+  justify-content: start;
+  gap: 2%;
+  margin-bottom: 4%;
+}
+.background {
+  width: 48%;
+}
+.khothu2 {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.testimonial-container {
+  margin-top: 4%;
+}
+.avatar {
+  margin-top: 2%;
+  width: 50%;
+  margin-left: 24%;
+  height: auto;
+  border-radius: 100%;
+}
+.testimonial-container {
+  display: flex;
+  justify-content: start;
+}
+.titimonial,
+.testimonial {
+  width: 46%;
+  background-color: #678b96;
+  height: 508px;
+  border-radius: 20px;
+  padding: 0 3.5%;
+  font-family: "Oswald", sans-serif;
+  color: rgb(255, 227, 227);
+  font-size: 18px;
+  font-weight: 500;
+  overflow: auto;
+}
+.testimonial {
+  margin-left: 6%;
+  background-color: #89e1bc;
+  color: rgb(46, 40, 40);
+}
+
+.title-overlapse {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 31px;
+  color: white;
+  border: none;
+  font-weight: normal;
+  margin-left: 3%;
+  margin-top: 5%;
+  font-weight: 600;
+}
+.ranking {
+  width: 100%;
+}
+.content-ranking {
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.subtitle {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.728);
+  margin-top: -4%;
+  margin-left: 3%;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    /* CSS cho màn hình nhỏ hơn 768px */
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+  }
+  .list-icon {
+    display: none;
+  }
+  .search-bar {
+    margin-left: 50% !important;
+    margin-top: 10%;
+  }
+  .sign-in {
+    display: none;
+  }
+  .sign-up {
+    display: none;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  .box-overlapse {
+    margin-top: -35%;
+    height: 14%;
+    margin-left: 3%;
+    width: 65%;
+  }
+  .title-overlapse {
+    font-size: 15px;
+  }
+  .subtitle {
+    font-size: 13px;
+  }
+  .see-more {
+    font-size: 15px;
+    margin-left: 60%;
+  }
+  .about {
+    float: none;
+  }
+  .container-finalpage {
+    height: 790px !important;
+  }
+  .title-text {
+    font-size: 10px;
+  }
+  .title-text h2 {
+    font-size: 10px !important;
+  }
+  .titimonial {
+    height: 350px !important;
+  }
+  .testimonial {
+    height: 350px !important;
+  }
+  .avatar-content p {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .search-bar {
+    margin-left: -10%;
+    width: 60%;
+  }
+  .box-overlapse {
+    margin-top: -30%;
+    height: 20%;
+    margin-left: 3%;
+  }
+}

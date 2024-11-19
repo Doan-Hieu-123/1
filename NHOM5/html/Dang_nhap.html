@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Đăng nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/1/NHOM5/css/DN.css" />
+    <link
+      rel="stylesheet"
+      href="/1/NHOM5/boxicons-2.1.4/css/boxicons.min.css"
+    />
+    <script src="/1/NHOM5/js/DN_DK.js"></script>
+  </head>
+  <body>
+    <form onsubmit="login(); return false;">
+      <table align="center">
+        <h1>Đăng nhập</h1>
+        <tr>
+          <td class="input_box">
+            <input
+              type="text"
+              placeholder="Tài khoản"
+              id="login-username"
+              required
+            />
+            <i class="bx bxs-user"></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="input_box">
+            <input
+              type="password"
+              placeholder="Mật khẩu"
+              id="login-password"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </td>
+        </tr>
+
+        <tr align="center">
+          <td class="button" colspan="2">
+            <input id="login" type="submit" value="Đăng nhập" />
+            <input
+              id="reset"
+              type="reset"
+              value="Hủy"
+              onclick="document.location='/1/NHOM5/index.html'"
+            />
+            <input
+              type="button"
+              value="Đăng kí"
+              onclick="document.location='/1/NHOM5/html/Dang_ki.html'"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

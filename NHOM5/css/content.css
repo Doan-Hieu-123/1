@@ -1,0 +1,63 @@
+.text .title {
+  display: inline-block;
+  font-size: 54px;
+  font-family: roboto;
+  font-weight: lighter;
+  margin-left: 2%;
+}
+
+.button-title {
+  border: none;
+  border-radius: 11px;
+  color: white;
+  background-color: black;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  margin-left: 45%;
+  text-decoration: none;
+}
+
+.text-inbox {
+  position: absolute;
+  margin-top: -4%;
+  margin-left: 1%;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.truycap {
+  position: absolute;
+  margin-top: -4.5%;
+  margin-left: 25%;
+  font-size: 40px;
+}
+.truycap a i {
+  color: white;
+  opacity: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 32%;
+  padding: 10px;
+  margin-right: 1%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.retro {
+  margin-bottom: 1%;
+}

@@ -1,0 +1,184 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 70%;
+  margin: auto;
+}
+
+#box1 {
+  background: #082b57;
+  width: 100%;
+}
+
+#header1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#logo a {
+  display: flex;
+  align-items: center;
+}
+
+#chu {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  line-height: 30px;
+  float: right;
+}
+
+#div_ul {
+  display: flex;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+}
+
+li {
+  margin: auto 10px;
+  font-size: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+#a1,
+#a2,
+#a3 {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+}
+
+#box2 {
+  background: #001e42;
+}
+
+#header2 {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#header2 a {
+  padding: 0px 10px;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#box3 {
+  background: #eeeeee;
+}
+
+#block1 {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#anh_1,
+#anh_2,
+#anh_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 33%;
+  padding: 10px;
+}
+
+#anh_1 a,
+#anh_2 a,
+#anh_3 a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+p1,
+p2,
+p3 {
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  font-size: 16px;
+  color: blue;
+}
+
+#box4 {
+  background: white;
+}
+
+#box_4_1 {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+#tieu_de_box4 {
+  font-size: 20px;
+  font-family: "myriadpro-semibold";
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 10px;
+}
+
+#box_4_1_1,
+#box_4_1_2 {
+  width: 50%;
+}
+
+#anh_4,
+#anh_5,
+#anh_6,
+#anh_7 {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#anh_4 p,
+#anh_5 p,
+#anh_6 p,
+#anh_7 p {
+  margin: 0;
+  padding: 0px 10px 0px 20px;
+  font-size: 20px;
+  color: blue;
+}
+
+#box5 {
+  background: pink;
+}

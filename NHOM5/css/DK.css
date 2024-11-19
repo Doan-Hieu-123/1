@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/1/NHOM5/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 0px 20px;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 36px;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+}
+
+form .input_box {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+.input_box #label_1 {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input_box input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.input_box input:focus ~ #label_1,
+.input_box input:valid ~ #label_1 {
+  top: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.input_box input::placeholder {
+  font-size: 16px;
+  color: white;
+}
+
+.input_box input:focus {
+  outline: none;
+  border: 2px solid transparent;
+  background-color: rgb(146, 139, 140);
+  color: black;
+}
+
+.input_box input:hover {
+  background-color: rgb(146, 139, 140);
+  cursor: pointer;
+}
+
+.input_box .icon_tk,
+.input_box .icon_em {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  font-size: 20px;
+  color: white;
+  line-height: 57px;
+}
+
+.input_box .icon:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Icon 1 2*/
+/* Ẩn icon thứ 2 khi checkbox được chọn */
+#toggle-checkbox_1:checked + .icon1 {
+  display: none;
+}
+
+#toggle-checkbox_1:checked + .icon1 + .icon2 {
+  display: block;
+}
+
+/* Định dạng các icon 1 2 */
+.icon1,
+.icon2 {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  font-size: 20px;
+  color: white;
+  line-height: 57px;
+}
+
+.icon1:hover,
+.icon2:hover {
+  cursor: pointer;
+}
+
+/*Mặc định ẩn icon 2 */
+.icon2 {
+  display: none;
+}
+
+/* Ẩn icon thứ 1 khi checkbox được chọn */
+#toggle-checkbox_1 {
+  display: none;
+}
+
+/* Icon 3 4 */
+/* Ẩn icon thứ 4 khi checkbox được chọn */
+#toggle-checkbox_2:checked + .icon3 {
+  display: none;
+}
+
+#toggle-checkbox_2:checked + .icon3 + .icon4 {
+  display: block;
+}
+
+/* Định dạng các icon 3 4 */
+.icon3,
+.icon4 {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  font-size: 20px;
+  color: white;
+  line-height: 57px;
+}
+
+.icon3:hover,
+.icon4:hover {
+  cursor: pointer;
+}
+
+/*Mặc định ẩn icon 4 */
+.icon4 {
+  display: none;
+}
+
+/* Ẩn icon thứ 3 khi checkbox được chọn */
+#toggle-checkbox_2 {
+  display: none;
+}
+
+.button {
+  display: flex;
+  position: relative;
+}
+
+.button input {
+  width: 30%;
+  height: 50px;
+  margin: 20px 0;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submit {
+  margin-right: 10px;
+}
+
+#reset {
+  margin-left: 10px;
+  position: absolute;
+  right: 0px;
+}
+
+.button input:hover {
+  background-color: white;
+  color: black;
+}
