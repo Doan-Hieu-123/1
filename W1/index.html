@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active"><span class="fa fa-home"></span>Home</a>
-        <a href="#news"><span class="fa fa-user"></span>Profile</a>
-        <div class="dropdown">
+      <a href="#home" class="active"><span class="fa fa-home"></span>Home</a>
+      <a href="#news"><span class="fa fa-user"></span>Profile</a>
+      <div class="dropdown">
         <button class="dropbtn">
-            <span class="fa fa-enve lope"></span>Massage<i class="fa fa-caret-down"></i>
+          <span class="fa fa-enve lope"></span>Massage<i
+            class="fa fa-caret-down"
+          ></i>
         </button>
         <div class="dropdown-content">
-        <a href="#"><span class="fa fa-caret-right"></span>Inbox</a>
-        <a href="#"><span class="fa fa-caret-right"></span>Sent</a>
-        <a href="#"><span class="fa fa-caret-right"></span>Draft</a>
+          <a href="#"><span class="fa fa-caret-right"></span>Inbox</a>
+          <a href="#"><span class="fa fa-caret-right"></span>Sent</a>
+          <a href="#"><span class="fa fa-caret-right"></span>Draft</a>
         </div>
-    </div>
-    <a href="#about"><span class="fa fa-cog"></span>Settings</a>
-    <a href="#contact"><span class="fa fa-power-off"></span>Logout</a>
-    <a href="javascript: void(0);" style="font-size: 15px;" class="icon".onclick="myFunction()"> = </a><a href="javascript: void(0) ;" style="font-size:15px;" class="icon"onclick="myFunction()"> =</a>
+      </div>
+      <a href="#about"><span class="fa fa-cog"></span>Settings</a>
+      <a href="#contact"><span class="fa fa-power-off"></span>Logout</a>
+      <a
+        href="javascript: void(0);"
+        style="font-size: 15px"
+        class="icon"
+        .onclick="myFunction()"
+      >
+        = </a
+      ><a
+        href="javascript: void(0) ;"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+      >
+        =</a
+      >
     </div>
     <div class="body">
-        <h1>Reponsive Dropdown Navbar using HTML and CSS</h1>
+      <h1>Reponsive Dropdown Navbar using HTML and CSS</h1>
     </div>
     <script>
-        function myFunction() {
-        var x = document.getElementById("myTopnav") ;
-        if (x.className === "topnav") { 
-            x.className += " responsive";
-            } else {
-            x.className = "topnav";
-            }
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
         }
+      }
     </script>
- </body>
+  </body>
 </html>
